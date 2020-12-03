@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+# About the app
+This app uses React's Class based components instead of hooks.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
