@@ -5,21 +5,42 @@
       padding: 0.5rem;
       border-radius: 5rem;
       font-size: 1rem;
+      font-family: inherit;
       color: $color-dark;
-      background-color: #dfe6e9;
+      background-color: $color-grey-light;
       border: none;
       outline: none;
       margin-bottom: 0.5rem;
+      border: 3px solid transparent;
       transition: all 0.2s;
 
       &:focus {
         transform: scale(1.1);
-        background-color: #636e72;
-        color: $color-primary;
-        &::placeholder {
-          color: $color-primary;
-        }
+        border: 3px solid rgba(48, 57, 82, 0.8);
       }
+
+      &::placeholder {
+        font-size: 0.8rem;
+        color: rgba($color-dark, 0.8);
+      }
+    }
+
+    &-input:placeholder-shown + &-label {
+      //adjacent sibling selector +. ~ is general sibling selctor
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-4rem);
+    }
+
+    &-label {
+      font-size: 0.8rem;
+      color: $color-dark;
+      display: block;
+      text-align: left;
+      margin-top: 0.5rem;
+      border-bottom: 1px solid rgba(48, 57, 82, 0.6);
+      width: 20%;
+      transition: all 0.2s;
     }
   }
 }

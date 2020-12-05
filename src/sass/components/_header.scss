@@ -1,5 +1,13 @@
 .header__container {
-  background-color: #222f3e;
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-grey-light, 0.8) 0%,
+      rgba($color-grey-light, 0.8) 50%,
+      transparent calc(50% + 1px)
+    ),
+    url('../../assets/header-back.jpg');
+  background-size: contain;
+
   position: relative;
   height: 30vh;
   border-radius: 0.5rem;
@@ -16,9 +24,10 @@
   &-heading {
     color: transparent;
     background-image: linear-gradient(
-      to right bottom,
-      $color-primary-light,
-      $color-primary-dark
+      105deg,
+      $color-dark 0%,
+      $color-dark 54%,
+      $color-grey-light 54%
     );
     background-clip: text;
     font-size: 4rem;
