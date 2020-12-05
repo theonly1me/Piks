@@ -41,7 +41,7 @@ class App extends React.Component {
 
   async getRandomPhotos() {
     const response = await unsplashAPI.get('/photos/random', {
-      params: { count: 30 },
+      params: { count: 20 },
     });
     this.setState({ images: response.data });
   }
