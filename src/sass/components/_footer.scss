@@ -1,0 +1,103 @@
+.footer {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  position: relative;
+  background-image: linear-gradient(
+    105deg,
+    rgba($color-dark, 0.9) 0%,
+    rgba($color-dark, 0.9) 50%,
+    $color-grey-light calc(50% + 1px)
+  );
+
+  &__text {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+    color: $color-white;
+    margin-left: 1rem;
+    transition: all 0.5s;
+
+    &:hover {
+      color: $color-primary;
+      transform: translate(4rem, 0) scale(1.5);
+    }
+  }
+  &__social-links {
+    margin-top: 1rem;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+
+    & a:link,
+    & a:visited {
+      text-decoration: none;
+      margin: 0 3rem;
+      font-size: 3rem;
+    }
+  }
+}
+
+.instagram {
+  color: $color-dark;
+  transition: all 0.4s;
+
+  &:hover {
+    color: #c32aa3;
+    transform: translateY(-3px);
+    text-shadow: 0 0.5rem 1rem rgba($color-dark, 0.8);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    text-shadow: 0 0.5rem 0.5rem rgba($color-dark, 0.8);
+  }
+}
+
+.twitter {
+  color: $color-dark;
+  transition: all 0.4s;
+
+  &:hover {
+    color: #1da1f2;
+    transform: translateY(-3px);
+    text-shadow: 0 0.5rem 1rem rgba($color-dark, 0.8);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    text-shadow: 0 0.5rem 0.5rem rgba($color-dark, 0.8);
+  }
+}
+
+.linkedin {
+  color: $color-dark;
+  transition: all 0.4s;
+
+  &:hover {
+    color: #0a66c2;
+    transform: translateY(-3px);
+    text-shadow: 0 0.5rem 1rem rgba($color-dark, 0.6);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    text-shadow: 0 0.5rem 0.5rem rgba($color-dark, 0.6);
+  }
+}
+
+.github {
+  color: $color-dark;
+  transition: all 0.4s;
+
+  &:hover {
+    color: #333;
+    transform: translateY(-3px);
+    text-shadow: 0 0.5rem 1rem rgba($color-dark, 0.6);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    text-shadow: 0 0.5rem 0.5rem rgba($color-dark, 0.6);
+  }
+}

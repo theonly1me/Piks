@@ -3,6 +3,7 @@ import React from 'react';
 import unsplashAPI from '../api/unsplash';
 import HeaderComponent from './HeaderComponent';
 import ImageListComponent from './ImageListComponent';
+import FooterComponent from './FooterComponent';
 
 import '../sass/main.scss';
 
@@ -52,6 +53,7 @@ class App extends React.Component {
         {this.state.images?.length ? (
           <ImageListComponent images={this.state.images} />
         ) : null}
+        <FooterComponent />
       </div>
     );
   }
