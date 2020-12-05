@@ -25,7 +25,7 @@ class App extends React.Component {
     //1. Send callback to child prop
     //2. Receives data inside callback and gets executed by child component when needed
     const response = await unsplashAPI.get('/search/photos', {
-      params: { query: term, per_page: 30 },
+      params: { query: term, per_page: 20 },
     });
     // const url = new URL('https://api.unsplash.com/search/photos');
     // url.searchParams.append('query', term);
