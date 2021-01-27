@@ -1,6 +1,6 @@
 # About the app
 
-### This is a proof of concept ReactJS app built using Class based components.
+### Built using CRA
 
 ### Styled with SASS 
 
